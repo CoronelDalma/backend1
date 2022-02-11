@@ -1,0 +1,28 @@
+nav {
+    width: max(30%, 350px);
+    background: var(--main-card);
+    padding: 1rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 30vh;
+    background: yellow;
+}
+nav ul li{
+    list-style: none;
+    background: green;
+}
+
+nav ul li{
+    background: white;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: var(--stroke);
+    font-size: 1.3rem;
+    font-weight: 500;
+}

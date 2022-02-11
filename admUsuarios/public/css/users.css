@@ -1,0 +1,34 @@
+#users {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+.user{
+    margin: 50px 20px;
+    background: transparent;
+    padding: 10px;
+    font-family: sans-serif;
+    border: 3px solid var(--stroke);
+}
+
+.user:hover {
+    background: var(--secondary);
+}
+.user:hover .user__header p,
+.user:hover .user__info p {
+    color: var(--stroke);
+}
+ .user p {
+     color: var(--headline);
+ }
+.user img{
+    width: 50px;
+}
+.user__header {
+    display: flex;
+    justify-content: center;
+}
+.name{
+    font-weight: bold;
+    font-size: 1.5rem;
+}

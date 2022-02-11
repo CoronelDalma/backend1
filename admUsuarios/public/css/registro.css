@@ -1,0 +1,29 @@
+#formulario {
+    background: var(--main-card);
+    width: max(60%,350px);
+    text-align: center;
+    border: 2px solid var(--stroke);
+    border-radius: 45px;
+    padding: 1rem 0;
+}
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    /*background: yellow;*/
+   justify-content: center;
+}
+
+.inputBox img {
+    margin-right: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
+.inputBox input {
+    height: 2rem;
+    text-align: center;
+    margin: 0.4rem;
+    border: 2px solid var(--stroke);
+    color: var(--stroke);
+}

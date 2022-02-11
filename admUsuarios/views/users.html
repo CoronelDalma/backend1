@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/users.css">
+
+</head>
+<body>
+    <header>
+        <h1>Lista de usuarios</h1>   
+    </header>
+    <main>
+        <div id="users"></div>
+    </main>
+
+    <script>
+        //Armando peticion
+        // Utilizando fetch
+        // fetch: Ir y traer algo
+        //fetch("http://localhost:4000/api/users") //Esto es valido
+        fetch("/api/users")
+        .then(function(respuesta){
+            //console.log(respuesta)
+            return respuesta.json()
+        })
+        .then(function(data){
+            var users = document.getElementById("users")
+
+            for(var user of data){
+                users.innerHTML = users.innerHTML + `<div class="user">
+                        <div class="user__header">
+                            <img src="${user.foto}">
+                            <p class="user__name">${user.nombre}</p>
+                        </div>
+                        <div class="user__info">
+                            <p class="user__gender">${user.genero}</p>
+                            <p class="user__age">${user.edad}</p>
+                            <p class="user__email">${user.email}</p>
+                            <p class="user__profession">${user.profesion}</p>
+                            <p class="user__salary">${user.salario}</p>
+                        </div>
+                        
+                    </div>`
+            }
+        })
+
+        // Hacer lo mismo, pero para mascotas
+    </script>
+    
+</body>
+</html>

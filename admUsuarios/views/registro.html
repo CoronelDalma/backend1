@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Registro de usuarios</h1>   
+    </header>
+    <main>
+        <h2>Ingrese los datos del usuario</h2>
+        <!-- TODO: Gestionar body -->
+        <!-- <form method="POST" action="/registro"> -->
+        <!-- formulario se envia en: x-www-form-urlencoded -->
+        <form id="formulario" method="POST" action="/registro" >
+            <div class="inputBox">
+                <img src="https://img.icons8.com/office/16/000000/homer-simpson--v1.png" alt="icon__user"/>
+                <input type="text" name="name" placeholder="Ingrese su nombre">
+            </div>
+            <div class="inputBox">
+                <img src="" alt="icon__user">
+                <input type="number" name="age" placeholder="Edad">
+            </div>
+            <div class="inputBox">
+                <img src="" alt="icon__user">
+                <input type="text" name="gender" placeholder="Ingrese su género">
+            </div>
+            <div class="inputBox">
+                <img src="" alt="icon__user">
+                <input type="email" name="email" placeholder="Ingrese su email">
+            </div>
+            <div class="inputBox">
+                <img src="" alt="icon__user">
+                <input type="text" name="profession" placeholder="Profesión">
+            </div>
+            <div class="inputBox">
+                <img src="" alt="icon__user">
+                <input type="number" name="salary" placeholder="Salario($)">
+            </div>
+            <div class="inputBox">
+                <img src="" alt="icon__user">
+                <input type="text" name="profile_pic" placeholder="Url de imagen de perfil">
+            </div>
+          
+            <button class="btn">Enviar</button>
+        </form>
+
+    </main>
+   
+
+    <script>
+        //const formulario = document.getElementById("formulario")
+
+        // formulario.onsubmit = function(envio){
+        //     //Cancelamos el envío
+        //     envio.preventDefault()
+        //     const data = {
+        //         name: envio.target.name.value,
+        //         email:envio.target.email.value,
+        //         birthday:envio.target.birthday.value,
+        //     }
+
+        //     console.log(data)
+
+        //     //TODO: Enviamos la información por JSON
+        // }
+    </script>
+</body>
+</html>
