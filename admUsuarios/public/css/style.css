@@ -74,6 +74,12 @@ header{
     font-size: 1.5rem;
 }
 
+@media (max-width: 890px) {
+    .header__container h1 {
+        font-weight: 500;
+    }
+    
+}
 /*-fin header ---*/
 main {
     display: flex;
