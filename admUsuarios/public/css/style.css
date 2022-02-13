@@ -32,15 +32,49 @@ h2 {
 p {
     color: var(--p);
 }
+/* --- header --*/
 header{
     border-bottom: 3px solid var(--stroke);
     background: transparent;
-    text-align: center;
-    line-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* line-height: 80px;*/
     height: 80px;
     margin-bottom: 2rem;
 }
 
+.header__container {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 2rem;
+    line-height: 2rem;
+}
+/*.header__nav {
+    background: #eebbc3;
+    
+}*/
+
+.header__nav .nav__items {
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+
+.header__nav .nav__items li {
+    list-style: none;
+    margin: 0 1rem;
+    
+}
+.header__nav ul li a {
+    color: var(--headline);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+/*-fin header ---*/
 main {
     display: flex;
     flex-direction: column ;

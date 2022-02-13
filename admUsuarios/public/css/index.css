@@ -1,9 +1,9 @@
-nav {
+.nav__index {
     width: max(30%, 350px);
     background: var(--main-card);
     padding: 1rem;
 }
-nav ul {
+.nav__index ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,16 +11,16 @@ nav ul {
     min-height: 30vh;
     background: yellow;
 }
-nav ul li{
+.nav__index ul li{
     list-style: none;
     background: green;
 }
 
-nav ul li{
+.nav__index ul li{
     background: white;
 
 }
-nav ul li a {
+.nav__index ul li a {
     text-decoration: none;
     color: var(--stroke);
     font-size: 1.3rem;
