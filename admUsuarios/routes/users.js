@@ -16,15 +16,18 @@ router.get('/registro',function(request,response){
 })
 
 router.post('/registro',async function(request,response){
-    //console.log(request.body) // {name: 'Tzuzul Code',email: 'mail@tzuzulcode.com',birthday: '2022-02-07'}
+   // console.log(request.body) // {name: 'Tzuzul Code',email: 'mail@tzuzulcode.com',birthday: '2022-02-07'}
     const persona = request.body
     const user = await userController.create(persona)
+
+    console.log(user)
     // Nos lleva luego a la página principal
     if(user.success){
         return response.redirect("/")
     }else{
         return response.redirect("/registro")
     }
+
 })
 
 router.get("/users",(req,res)=>{
@@ -36,6 +39,7 @@ router.get("/api/users",async (req,res)=>{
     return res.json(users)
 })
 
+//delete user
 
 
 module.exports = router

@@ -18,6 +18,9 @@
     </main>
 
     <script>
+        function hola () {
+            return console.log("hola")
+        }
         //Armando peticion
         // Utilizando fetch
         // fetch: Ir y traer algo
@@ -32,16 +35,20 @@
 
             for(var user of data){
                 users.innerHTML = users.innerHTML + `<div class="user">
-                        <div class="user__header">
-                            <img src="${user.foto}">
-                            <p class="user__name">${user.nombre}</p>
+                        <div class="user__pic">
+                            <img src="${user.profile_pic}">
                         </div>
                         <div class="user__info">
-                            <p class="user__gender">${user.genero}</p>
-                            <p class="user__age">${user.edad}</p>
+                            <p class="user__name">${user.name}</p>
+                            <p class="user__gender">${user.gender}</p>
+                            <p class="user__age">${user.age}</p>
                             <p class="user__email">${user.email}</p>
-                            <p class="user__profession">${user.profesion}</p>
-                            <p class="user__salary">${user.salario}</p>
+                            <p class="user__profession">${user.profession}</p>
+                            <p class="user__salary">${user.salary}</p>
+                        </div>
+                        <div class="user__btn">
+                            <button class="btn">Editar</button>
+                            <button class="btn" onclick="hola()">Eliminar</button>
                         </div>
                         
                     </div>`

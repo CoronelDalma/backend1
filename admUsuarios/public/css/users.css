@@ -4,31 +4,49 @@
     width: 90vw;
 }
 .user{
-    margin: 50px 20px;
-    background: transparent;
+    margin: 1.5rem auto;
+    background: var(--main-card);
     padding: 10px;
     font-family: sans-serif;
     border: 3px solid var(--stroke);
+    display: flex;
+    border-radius: 5px;
+    width: max(80%,680px);
 }
-
+/*
 .user:hover {
     background: var(--secondary);
 }
-.user:hover .user__header p,
+*/
+.user__pic {
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+}
+
+
+.user__pic img {
+    width: 100%;
+    
+}
 .user:hover .user__info p {
-    color: var(--stroke);
+    color: var(--headline);
 }
  .user p {
-     color: var(--headline);
+    color: var(--stroke);
+     margin-left: 2rem;
  }
-.user img{
-    width: 50px;
-}
-.user__header {
+
+
+.user__pic {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.name{
-    font-weight: bold;
-    font-size: 1.5rem;
+
+.user__btn {
+    justify-content: flex-end;
+}
+.btn {
+    margin: 1rem;
 }

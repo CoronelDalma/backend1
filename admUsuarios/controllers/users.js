@@ -11,6 +11,13 @@ class UserController{
         console.log(users)
         return users
     }
+
+    async deleteUser(user){
+        const results = await database.del('usuarios',user)
+        console.log(results)
+        return results
+    }
+
 }
 
 module.exports = UserController

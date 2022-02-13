@@ -52,6 +52,11 @@ main {
     background: var(--button_color);
     border: none;
     padding: 1rem 2rem;
-    font-size: 1.5rem;
-   
+    font-size: 1.5rem;  
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: var(--button_color);
+    background: var(--button-text);
 }
