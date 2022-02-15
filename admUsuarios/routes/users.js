@@ -16,7 +16,6 @@ router.get('/registro',function(request,response){
 })
 
 router.post('/registro',async function(request,response){
-   // console.log(request.body) // {name: 'Tzuzul Code',email: 'mail@tzuzulcode.com',birthday: '2022-02-07'}
     const persona = request.body
     const user = await userController.create(persona)
 
@@ -40,6 +39,11 @@ router.get("/api/users",async (req,res)=>{
 })
 
 //delete user
+router.delete("/api/users/:id", async (req, res) => {
+    const id= req.params.id;
+    var user = await userController.deleteUser(id);
+    return res.json(user);
 
+})
 
 module.exports = router

@@ -12,8 +12,8 @@ class UserController{
         return users
     }
 
-    async deleteUser(user){
-        const results = await database.del('usuarios',user)
+    async deleteUser(id){
+        const results = await database.del('usuarios',id)
         console.log(results)
         return results
     }

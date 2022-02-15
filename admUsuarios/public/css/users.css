@@ -3,6 +3,11 @@
     flex-direction: column;
     width: 90vw;
 }
+.users_title {
+    width: 100%;
+    color: var(--headline);
+    text-align: center;
+}
 .user{
     margin: 1.5rem auto;
     background: var(--main-card);

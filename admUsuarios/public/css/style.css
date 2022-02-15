@@ -68,6 +68,7 @@ header{
     margin: 0 1rem;
     
 }
+
 .header__nav ul li a {
     color: var(--headline);
     text-decoration: none;
