@@ -1,3 +1,5 @@
+
+
 //Armando peticion
 // Utilizando fetch
 // fetch: Ir y traer algo
@@ -68,13 +70,6 @@ fetch("/api/users")
         for (var input of inputs){
             input.disabled = false;
         }
-        /*
-        document.getElementsByClassName("user__name")[0].disabled = false;
-        document.getElementsByClassName("user__gender")[0].disabled = false;
-        document.getElementsByClassName("user__age")[0].disabled = false;
-        document.getElementsByClassName("user__email")[0].disabled = false;
-        document.getElementsByClassName("user__profession")[0].disabled = false;
-        document.getElementsByClassName("user__salary")[0].disabled = false;*/
 
         document.getElementById('btn-edit').style.visibility='hidden';
     }
