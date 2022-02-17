@@ -19,11 +19,11 @@ fetch("/api/users")
             </div>`
         }
         for(var user of data){
-            const userC = user;
+            
             users.innerHTML = users.innerHTML + `<div class="user">
                 <div class="user__main">
                     <div class="user__pic">
-                        <img src="${user.profile_pic}">
+                        <img src="${user.profile_pic}" alt="${user.name}">
                     </div>
                      <div class="user__info">
                         
