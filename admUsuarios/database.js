@@ -10,6 +10,9 @@ const connection = mysql.createConnection({
 
 // Encapsulando con promesas:
 function query(sql,data){
+    console.log("Database");
+    console.log(sql);
+    console.log(data);
     return new Promise((resolve,reject)=>{
         connection.query(sql,data,function(error,result){
             //Error first callback
@@ -34,7 +37,7 @@ async function insert(tableName,data){
 //No podemos usar delete: palabra reservada
 async function del(tableName,data){
     try{
-        await query(`DELETE FROM ${tableName} WHERE idUsuario=?`,[data]) 
+        await query(`DELETE FROM ${tableName} WHERE idusuario=?`,[data]) 
         return data
     }catch(error){
         return error
@@ -44,7 +47,7 @@ async function del(tableName,data){
 //----- FALTA PROBAR 
 async function upd(tableName,data){
     try{
-        await query(`UPDATE ${tableName} SET ? WHERE idUsuario=?`,[data])
+        await query(`UPDATE ${tableName} SET ? WHERE idusuario=?`,[data])
         return data
     }catch(error){
         return error

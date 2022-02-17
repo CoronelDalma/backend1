@@ -8,12 +8,20 @@ class UserController{
 
     async readAll(){
         const users = await database.query(`SELECT * FROM usuarios`)
-        console.log(users)
+       // console.log(users)
         return users
     }
 
     async deleteUser(id){
         const results = await database.del('usuarios',id)
+        console.log(results)
+        return results
+    }
+
+    async updateUser(user){
+        //const results = await database.upd('usuarios',user)
+        console.log("el user es: "+user)
+        const results = await database.query('UPDATE usuarios SET ? WHERE idusuario ='+user.idusuario,[user])
         console.log(results)
         return results
     }
