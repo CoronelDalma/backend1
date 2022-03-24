@@ -48,13 +48,10 @@ router.delete("/api/users/:id", async (req, res) => {
 
 //update user
 router.post("/api/users/:id", async (req, res) => {
-    console.log("hola");
+    //console.log("hola");
     const id= req.params.id;
     const data = req.body;
-    console.log(data);
-    // let value = document.getElementsByClassName("user__input")[0];
-    // console.log("primer valor:")
-    // console.log(value)
+    //console.log(data);
     var user = await userController.updateUser(data);
     return res.json(user);
 

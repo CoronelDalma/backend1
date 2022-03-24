@@ -53,7 +53,7 @@ fetch("/api/users")
 
     // delete user
     async function deleteUser(id){
-        console.log("Quiero eliminar usuario "+id);
+        //console.log("Quiero eliminar usuario "+id);
         fetch("/api/users/"+id,{
             method: "DELETE",
         })

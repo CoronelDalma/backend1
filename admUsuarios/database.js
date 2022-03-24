@@ -10,9 +10,9 @@ const connection = mysql.createConnection({
 
 // Encapsulando con promesas:
 function query(sql,data){
-    console.log("Database");
+   /* console.log("Database");
     console.log(sql);
-    console.log(data);
+    console.log(data);*/
     return new Promise((resolve,reject)=>{
         connection.query(sql,data,function(error,result){
             //Error first callback
@@ -73,4 +73,4 @@ async function readId(tableName,data){
 }
 
 // Exportamos un objeto
-module.exports = {query,insert,del}
+module.exports = {query,insert,del, upd}
