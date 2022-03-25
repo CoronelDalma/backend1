@@ -1,4 +1,4 @@
-#### Proyecto de NodeJs
+# Proyecto de NodeJs
 
 ### inicio
 npm init -y
@@ -6,16 +6,16 @@ npm i express
 npm i express-session
 npm i nodemon -D
 
-## sequelize
+### sequelize
 npm i sequelize
 npm i sequelize-cli -D
 npx sequelize-cli init
 
-## ejs
+### ejs
 npm i ejs
 npm i express-ejs-layouts
 
-## Tailwind
+### Tailwind
 npm i tailwindcss -D
 npx tailwindcss init
 tailwind.config.js : module.exports = {
